@@ -1,0 +1,1 @@
+This code suffers from a potential infinite recursion bug if the function `process_data` is called with an invalid input.  Specifically, if `$data` contains an unexpected data type, or if the conditional checks fail to properly handle edge cases, the function may call itself indefinitely, leading to a stack overflow error.
